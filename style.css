@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: powderblue;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex: 0;
+}
+
+.inner-container{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+
+.controls{
+    display: flex;
+    align-self: flex-start;
+    margin-top: 5vh;
+    height: 700px;
+    width: 75px;
+    flex-direction: column;
+    margin-left: -140px;
+    gap: 20px;
+}
+
+.control-wrapper{
+    border-style: solid;
+    border-radius: 25%;
+    background-color: #ff0000bd;
+    border-color:darkred;
+    color: white;
+    padding: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.rainbow{
+    width: 40px;
+}
+
+.eraser{
+    width: 40px;
+}
+
+.clear{
+    width: 25px;
+}
+
+.selected{
+    background-color: darkred;
+    transform: scale(1.1);
+    border-color: #ff0000bd;
+}
+
+.sketch-container{
+    display: flex;
+    flex: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-style: solid; 
+    border-color: red; 
+    border-width: 12px;
+    border-radius: 2%;
+    background-color: red;
+    margin-top: 11px;
+}
+
+.sketch-title{
+    font-family: "Whisper", cursive;
+    color: gold;
+    font-size: 52px;
+}
+
+.registered-symbol{
+    font-size: 20px;
+}
+
+.different-font{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+    color: goldenrod;
+    margin: 10px;
+}
+
+.grid{
+    border-style: solid;
+    border-color: darkred;
+    border-width: 10px;
+    border-radius: 15px;
+    justify-content: center;
+    background-color: white;
+}
+
+.horizontalContainers{
+    display: flex; 
+    gap: 0; 
+}
+
+.squares{
+    flex:1; 
+    border-left-style: solid; 
+    border-top-style: solid;
+    border-color: lightgrey; 
+    border-width: 1px; 
+}
+
+.knobs{
+    flex: 1;
+    align-self: normal;
+    display:flex;
+    justify-content: space-between;
+        margin-top: 10px;
+}
+
+.knob.one, .two{
+    flex: 1;
+    max-width: 0px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 100%;
+}
+
