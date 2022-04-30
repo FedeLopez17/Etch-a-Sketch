@@ -10,7 +10,6 @@ gridContainer.addEventListener("mousedown", ()=>{draw = true});
 gridContainer.addEventListener("mouseup", ()=>{draw = false});
 
 let draw = false; size = 18; color = "#595959"; eraserActivated = false; rainbowSelected = false; grid = true;
-let oldColor;
 
 function removeGrid(){
     const horizontalContainers = document.querySelectorAll(".horizontal-divs");
@@ -53,7 +52,7 @@ function makeGrid (size) {
 }
 
 const colorSelector = document.querySelector("#color");
-colorSelector.addEventListener("change", ()=>{color = colorSelector["value"];});
+colorSelector.addEventListener("change", ()=>{if (!eraserActivated) color = colorSelector["value"];});
 
 const rainbow = document.querySelector(".rainbow-wrapper");
 rainbow.addEventListener("click", ()=>{
@@ -84,13 +83,12 @@ function randomColor(){
 const eraser = document.querySelector(".eraser-wrapper");
 eraser.addEventListener("click", ()=> {
     if (!eraserActivated){
-        oldColor = color;
         color = "white";
         eraserActivated = true;
         eraser.classList.toggle("selected");
     }
     else{
-        color = oldColor;
+        color = colorSelector.value;
         eraserActivated = false;
         eraser.classList.toggle("selected");
     }
