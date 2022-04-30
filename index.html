@@ -6,53 +6,42 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Whisper&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
         <link rel="stylesheet" href="./style.css">
         <script type="text/javascript" src="./etch-a-sketch.js" defer></script>
-        <title>Etch-a-Sketch</title>
+        <title>Etch a Sketch</title>
     </head>
     <body ondragstart="return false;" ondrop="return false;">
-        <div class="container">
-            <div class="inner-container">
-                <div class="controls">
-                    <div class="control-wrapper grid-density-wrapper">
-                        <div class="grid-density-button"> 
-                            <label for="sixtyfour">64</label>
-                            <input type="radio" name="grid-density" value="64" id="sixtyfour" checked>
-                        </div>
-                        <div class="grid-density-button">
-                            <label for="thitytwo">32</label>
-                            <input type="radio" name="grid-density" value="32" id="thitytwo">
-                        </div>
-                        <div class="grid-density-button">
-                            <label for="sixteen">16</label>
-                            <input type="radio" name="grid-density" value="16" id="sixteen">
-                        </div>
-                        <div class="grid-density-button">
-                            <label for="eight">08</label>
-                        <input type="radio" name="grid-density" value="8" id="eight">
-                        </div>
-                    </div>
-                    <div class="control-wrapper color-wrapper">
-                        <input type="color" name="color" value="#000000" id="color">
-                    </div>
-                    <div class="control-wrapper rainbow-wrapper">
-                        <img class="rainbow" src="./images/rainbow.png">
-                    </div>
-                    <div class="control-wrapper eraser-wrapper">
-                        <img class="eraser" src="./images/eraser.png">
-                    </div>
-                    <div class="control-wrapper clear-wrapper">
-                        <img class="clear" src="./images/clear.png">
-                    </div>
-                </div>
-                <div class="sketch-container">
-                    <h1 class="sketch-title"><span class="different-font">MAGIC</span> Etch A Sketch <span class="registered-symbol"> &reg</span><span class="different-font">SCREEN</span></h1>
-                    <div class="knobs">
-                        <div class="knob one"></div>
-                        <div class="knob two"></div>
-                    </div>
-                </div>
+        <div class="controls">
+            <div class="control-wrapper grid-density-wrapper">
+                <input type="range" id="grid-density" name="grid-density" min="8" max="100" value="18" title="Grid density">
+            </div>
+            <div class="control-wrapper color-wrapper">
+                <input type="color" name="color" value="#595959" id="color" title="Color picker">
+            </div>
+            <div class="control-wrapper rainbow-wrapper">
+                <img class="rainbow" src="./images/rainbow.png" title="Rainbow mode">
+            </div>
+            <div class="control-wrapper eraser-wrapper">
+                <img class="eraser" src="./images/eraser.png" title="Eraser">
+            </div>
+            <div class="control-wrapper clear-wrapper">
+                <img class="clear" src="./images/clear.png" title="Clear canvas">
+            </div>
+            <div class="control-wrapper gridToggle-wrapper selected">
+                <img class="gridToggle" src="./images/grid.png" title="Toggle grid">
             </div>
         </div>
+        <div class="sketch-container">
+            <div class="title-wrapper">
+                <span class="different-font left">MAGIC</span> Etch A Sketch <span class="registered-symbol"> &reg</span><span class="different-font right">SCREEN</span>
+            </div> 
+            <div class="grid-container">
+            </div>
+            <div class="knobs">
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><div class="knob one"></div></a>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><div class="knob two"></div></a>
+            </div>
+        </div>      
     </body>
 </html>
