@@ -8,6 +8,7 @@ for (let control of controls.childNodes){
 }
 gridContainer.addEventListener("mousedown", ()=>{draw = true});
 gridContainer.addEventListener("mouseup", ()=>{draw = false});
+gridContainer.addEventListener("mouseleave", ()=>{draw = false});
 
 let draw = false; size = 18; color = "#595959"; eraserActivated = false; rainbowSelected = false; grid = true;
 
