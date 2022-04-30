@@ -71,6 +71,16 @@ body{
     text-shadow: -0.2vh 0 black, 0 0.2vh black, 0.2vh 0 black, 0 -0.2vh black;
 }
 
+img::selection, .title-wrapper::selection, .registered-symbol::selection, .different-font::selection{
+    color: none;
+    background: none;
+}
+/* For Mozilla Firefox */
+img::-moz-selection, .title-wrapper::-moz-selection, .registered-symbol::-moz-selection, .different-font::-moz-selection{
+    color: none;
+    background: none;
+}
+
 .registered-symbol{
     font-size: 3vh;
     align-self: flex-start;
