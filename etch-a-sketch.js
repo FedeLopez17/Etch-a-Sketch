@@ -120,7 +120,7 @@ gridToggle.addEventListener("click", ()=>{
 });
 makeGrid(size);
 //cosas para agregar a futuro 
-//balde de pintura(flood fill algorithm). guardar los dibujitos. 
+//Arreglar la responsividad. balde de pintura(flood fill algorithm). guardar los dibujitos. 
 //que giren los rendodelitos. que te muestre las coordenadas donde estas parado. que la gente se pueda registrar para guardar 
 //sus dibujitos en galerias personales para seguirlos dibujando mas tarde.
 //Rick rolls en las perillas.
