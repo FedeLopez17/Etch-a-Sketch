@@ -125,3 +125,4 @@ makeGrid(size);
 //sus dibujitos en galerias personales para seguirlos dibujando mas tarde.
 //Rick rolls en las perillas.
 //descargar el dibujo de alguna manera.
+// shortcut keys
